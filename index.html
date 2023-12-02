@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shukhrat Turdiev - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+</head>
+<body>
+    <!-- Desktop Navigation -->
+
+    <nav id="desktop-nav">
+        <div class="logo">Shukhrat Dev</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hamburger Navigation -->
+
+    <nav id="hamburger-nav">
+        <div class="logo">Shukhrat Dev</div>    
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profil Section -->
+
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/profile-pic.png" alt="Shukhrat Turdiev">
+        </div>
+        <div class="section-text">
+            <p class="sectiontext-p1">
+                Hello, I'm
+            </p>
+            <h1 class="title">ShukhDev</h1>
+            <p class="sectiontext-p2">
+                Frontend Developer
+            </p>
+            <div class="btn-container">
+                <button type="button" class="btn btn-color-2">
+                  <a href="./assets/resume-example.pdf" target="_blank">Download CV</a>
+                </button>
+                <button type="button" class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/shukhrat-turdiev'">
+                <img src="./assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/shukhratgithub'">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+
+    <section id="about">
+        <p class="sectiontext-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br>Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors Degree <br>M.Sc. Masters Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Seasoned Web Deloper with over 2+ years of expertise, contributing to success at Elite Electronics, Master Pieces, and Jolly HollyMood. Adept at turning concepts into captivating digital experiences. Thrives on challenges, committed to innovation. Let's collaborate on your next project!</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Picture" class="icon arrow" onclick="location.href='#experience'">
+    </section>
+
+    <!-- Experience Section -->
+
+    <section id="experience">
+        <p class="sectiontext-p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Picture" class="icon arrow" onclick="location.href='#projects'">
+    </section>
+
+    <!-- Projects Section -->
+
+    <section id="projects">
+        <p class="sectiontext-p1">Browse My</p>
+        <h1 class="title">Recent Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project one" class="project-img">
+                    </div>
+                    <h2 class="experience-subtitle project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shukhratgithub'">
+                            GitHub
+                        </button>
+                        <button type="button" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shukhratgithub'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project one" class="project-img">
+                    </div>
+                    <h2 class="experience-subtitle project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shukhratgithub'">
+                            GitHub
+                        </button>
+                        <button type="button" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shukhratgithub'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project one" class="project-img">
+                    </div>
+                    <h2 class="experience-subtitle project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shukhratgithub'">
+                            GitHub
+                        </button>
+                        <button type="button" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shukhratgithub'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Picture" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+        <p class="sectiontext-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Address" class="icon contact-icon email-icon">
+                <p><a href="mailto:shukhratuzz@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/shukhrat-turdiev">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 ShukhDev. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
